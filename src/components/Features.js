@@ -5,29 +5,35 @@ const Features = () => {
     <section className="feature" id="feature">
       
       <p>
-        In Today's Digital Age, The Internet Has Become An Integral Part Of Our
-        Daily Lives. On Average, Individuals Spend Approximately 399 Minutes Per
-        Day Surfing The Internet. That's Nearly Seven Hours Where Opportunities
-        Abound For Businesses To Connect, Engage, And Promote Their Products Or
-        Services. At E. T. Enterprise, We Understand The Immense Potential These
-        Online Interactions Offer For Businesses Like Yours. Imagine Harnessing
-        Just A Fraction Of Those 399 Minutes To Showcase Your Brand, Engage With
-        Your Audience, And Convert Prospects Into Loyal Customers. With Our
-        Comprehensive Digital Marketing Strategies, We Ensure Your Business
-        Stands Out In The Digital Revolution. Whether It's Optimizing Your
-        Online Presence Through Targeted SEO Techniques, Leveraging The Power Of
-        Social Media To Engage With Your Audience, Or Crafting Compelling
-        Content That Resonates With Your Customers – We've Got You Covered. And
-        As You Read This, Approximately $1,048,207 Is Spent Worldwide Every
-        Second, And Over 5 Billion People Are Active Internet Users Globally.
-        Don't Miss Out On Reaching This Vast Audience! Partner With Us To Turn
-        Those 399 Minutes Into An Impactful Opportunity For Your Business's
-        Success.
-      </p>
+  In today's digital age, the internet has become an integral part of our daily
+  lives. On average, individuals spend approximately 399 minutes per day surfing
+  the internet. That's nearly seven hours where opportunities abound for
+  businesses to connect, engage, and promote their products or services.
+</p>
+<p>
+  At E. T. Enterprise, we understand the immense potential these online
+  interactions offer for businesses like yours. Imagine harnessing just a
+  fraction of those 399 minutes to showcase your brand, engage with your
+  audience, and convert prospects into loyal customers.
+</p>
+<p>
+  With our comprehensive digital marketing strategies, we ensure your business
+  stands out in the digital revolution. Whether it's optimizing your online
+  presence through targeted SEO techniques, leveraging the power of social media
+  to engage with your audience, or crafting compelling content that resonates
+  with your customers – we've got you covered.
+</p>
+<p>
+  And as you read this, approximately $1,048,207 is spent worldwide every
+  second, and over 5 billion people are active internet users globally. Don't
+  miss out on reaching this vast audience! Partner with us to turn those 399
+  minutes into an impactful opportunity for your business's success.
+</p>
+
       <h1 className="heading">our awesome features</h1>
 
       <div className="box-container">
-        <div className="box">
+        <div className="box"  >
           <img src="images/fe1.png" alt="" />
           <h3>focus on Long Term Visions</h3>
           <p>
@@ -38,7 +44,7 @@ const Features = () => {
           </a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/fe2.png" alt="" />
           <h3>focus on Market Research</h3>
           <p>
@@ -49,7 +55,7 @@ const Features = () => {
           </a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/fe3.png" alt="" />
           <h3>focus on digital marketing</h3>
           <p>
@@ -60,7 +66,7 @@ const Features = () => {
           </a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/fe3.png" alt="" />
           <h3>fast delivery</h3>
           <p>
@@ -71,7 +77,7 @@ const Features = () => {
           </a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/fe3.png" alt="" />
           <h3>heavy discounts</h3>
           <p>
@@ -82,7 +88,7 @@ const Features = () => {
           </a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/fe3.png" alt="" />
           <h3>money returns</h3>
           <p>

@@ -6,7 +6,7 @@ const Services = () => {
       <h1 className="heading">our services</h1>
 
       <div className="box-container">
-        <div className="box">
+        <div className="box"  >
           <img src="images/s1.png" alt="" />
           <h3>web/app development</h3>
           <p>
@@ -15,7 +15,7 @@ const Services = () => {
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/s2.png" alt="" />
           <h3>marketing</h3>
           <p>
@@ -24,7 +24,7 @@ const Services = () => {
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/s3.png" alt="" />
           <h3>Branding</h3>
           <p>
@@ -33,7 +33,7 @@ const Services = () => {
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/s4.png" alt="" />
           <h3>seo optimization</h3>
           <p>
@@ -42,7 +42,7 @@ const Services = () => {
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/s1.png" alt="" />
           <h3>Ads Management</h3>
           <p>
@@ -51,7 +51,7 @@ const Services = () => {
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/s5.png" alt="" />
           <h3>web/app design</h3>
           <p>
@@ -60,7 +60,7 @@ const Services = () => {
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/s1.png" alt="" />
           <h3>Social Media Management</h3>
           <p>
@@ -69,7 +69,7 @@ const Services = () => {
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/s2.png" alt="" />
           <h3>Logo Design</h3>
           <p>
@@ -78,7 +78,7 @@ const Services = () => {
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/s3.png" alt="" />
           <h3>Business Concepts</h3>
           <p>
@@ -88,7 +88,7 @@ Innovative strategies and concepts sculpted to elevate your business prospects a
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/s4.png" alt="" />
           <h3>Market Research</h3>
           <p>
@@ -97,7 +97,7 @@ Innovative strategies and concepts sculpted to elevate your business prospects a
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box">
+        <div className="box"  >
           <img src="images/s5.png" alt="" />
           <h3>Long Term Visions</h3>
           <p>

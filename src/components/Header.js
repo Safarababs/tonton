@@ -1,21 +1,29 @@
-import React from 'react'
+import React from "react";
 
-const Header = () => {
+function Header() {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header>
-      <a href="#" className="logo">e.t.enterprise</a>
-
       <div id="menu-bar" className="fas fa-bars"></div>
+      <span className="logo" onClick={() => scrollToSection('home')}>
+        e. t. enterprise
+      </span>
 
       <nav className="navbar">
-        <a style={{"--i": "0"}} href="#home">home</a>
-        <a style={{"--i": "1"}} href="#service">service</a>
-        <a style={{"--i": "2"}} href="#price">price</a>
-        <a style={{"--i": "3"}} href="#feature">feature</a>
-        <a style={{"--i": "6"}} href="#contact">contact</a>
+        <span onClick={() => scrollToSection('home')}>home</span>
+        <span onClick={() => scrollToSection('service')}>Service</span>
+        <span onClick={() => scrollToSection('price')}>Price</span>
+        <span onClick={() => scrollToSection('feature')}>Feature</span>
+        <span onClick={() => scrollToSection('contact')}>Contact</span>
       </nav>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

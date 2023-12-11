@@ -1,44 +1,97 @@
-import React from 'react'
+import React, { useState } from "react";
+import axios from "axios";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    number: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage("");
+
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/send-email",
+        formData
+      );
+      console.log(response.data);
+      setLoading(false);
+      setMessage("Email sent successfully!");
+      // Handle success, maybe show a success message
+    } catch (error) {
+      console.error("There was an error!", error);
+      setLoading(false);
+      setMessage("Failed to send email. Please try again.");
+      // Handle error, show an error message
+    }
+  };
+
   return (
     <section className="contact" id="contact">
       <h1 className="heading">contact us</h1>
 
       <div className="row">
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <div className="inputBox">
-            <input type="text" required />
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
             <label>name</label>
           </div>
-
           <div className="inputBox">
-            <input type="email" required />
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
             <label>email</label>
           </div>
-
           <div className="inputBox">
-            <input type="number" required />
+            <input
+              type="number"
+              name="number"
+              value={formData.number}
+              onChange={handleChange}
+              required
+            />
             <label>number</label>
           </div>
-
           <div className="inputBox">
-            <textarea required name="" id="" cols="30" rows="10"></textarea>
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              cols="30"
+              rows="10"
+            ></textarea>
             <label>message</label>
           </div>
-
+     
           <input type="submit" className="btn" value="send message" />
+          {loading && <p style={{color:"black"}}>Please wait...</p>}
+          {message && <p style={{color:"black"}}>{message}</p>}
         </form>
-
-        <iframe
-          className="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5083.100123183013!2d7.010707904900426!3d51.466020044785674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b91d437117de5b%3A0x924b5dab02ef7c7!2sKellersohnweg%2016%2C%2045326%20Essen%2C%20Germany!5e0!3m2!1sen!2sde!4v1639356454703!5m2!1sen!2sde"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

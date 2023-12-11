@@ -77,13 +77,15 @@ header .logo {
   font-weight: bolder;
 }
 
-header .navbar a {
+header .navbar span {
   font-size: 2rem;
   margin-left: 2.5rem;
   color: var(--black);
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
-header .navbar a:hover {
+header .navbar span:hover {
   color: var(--orange);
 }
 
@@ -110,7 +112,7 @@ header .navbar a:hover {
   padding-top: 4rem;
   flex: 1 1 40rem;
   opacity: 0;
-  
+  overflow: hidden;
   animation: slideFromRight 1s forwards 0.5s;
 }
 
@@ -123,13 +125,6 @@ header .navbar a:hover {
 .home .content {
   padding: 1rem;
   flex: 1 1 40rem;
-}
-
-@keyframes slideFromLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 .home .content h3 {
@@ -193,6 +188,7 @@ header .navbar a:hover {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .feature .box-container .box {
@@ -200,10 +196,12 @@ header .navbar a:hover {
   text-align: center;
   padding: 2rem 4rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  flex: 1 1 30rem;
+  height: auto;
+  width: 30rem;
   overflow: hidden;
+  opacity: 0;
   transform: translateX(-100%);
-  animation: slideFromLeft 1s forwards .5s;
+  animation: slideFromLeft 1s forwards 1s;
 }
 
 @keyframes slideFromLeft {
@@ -218,11 +216,11 @@ header .navbar a:hover {
   color: var(--black);
   padding: 1rem 0;
 }
-.feature  p {
+.feature p {
   font-size: 1.8rem;
   color: black;
   padding-bottom: 1rem;
-  line-height: 3.5rem;
+  line-height: 2.5rem;
 }
 
 .feature .box-container .box p {
@@ -235,6 +233,7 @@ header .navbar a:hover {
 
 .service {
   background: var(--black);
+  overflow: hidden;
 }
 
 .service .heading {
@@ -246,14 +245,27 @@ header .navbar a:hover {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .service .box-container .box {
   padding: 4rem;
   margin: 1rem;
-  flex: 1 1 30rem;
+  height: 40rem;
+  width: 35rem;
   border: 0.1rem solid #fff3;
   text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideFromLeft 1s forwards 1s;
+}
+
+@keyframes slideFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .service .box-container .box h3 {
@@ -290,53 +302,45 @@ header .navbar a:hover {
   color: #fff;
 }
 
-.about p {
+.about .content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .content-container .content-box-text p {
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 1rem;
   color: #fff;
 }
 
-.about .content {
-  background: #192a56;
+.about .content-container .content-box {
+  width: 45rem;
+  height: 45rem;
+  background: white;
+  margin: 1rem;
 }
 
-.about-us {
-  
-  margin: 0 auto;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-.about-us h2 {
+.about .content-container .content-box h3 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1rem;
+}
+.about .content-container .content-box p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 1rem;
+  margin: 1rem;
 }
 
-.about-us h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #fff;
-}
 
-.about-us ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.about-us ul li {
-  margin-bottom: 15px;
-}
-
-.about-us ul li strong {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #fff;
-  text-decoration: underline;
-}
-
-.about-us ul li p {
-  margin-bottom: 15px;
-  color: #fff;
+.new1 {
+  width: 50%;
+  margin: auto;
+  border: 1px solid var(--yellow);
 }
 
 /* contact */
@@ -416,14 +420,23 @@ header .navbar a:hover {
   padding: 0.5rem 0;
 }
 
-.footer .box-container .box a {
+.footer .box-container .box span {
   display: block;
   font-size: 1.5rem;
   color: #fff;
   padding: 0.5rem 0;
+  cursor: pointer;
 }
 
-.footer a:hover {
+.footer .box-container .box span a {
+  display: block;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.footer span:hover {
   text-decoration: underline;
 }
 
@@ -436,7 +449,7 @@ header .navbar a:hover {
   letter-spacing: 0.1rem;
 }
 
-.footer .credit a {
+.footer .credit span {
   color: var(--orange);
 }
 
@@ -472,11 +485,11 @@ header .navbar a:hover {
     display: none;
   }
 
-  header .navbar .nav-toggle {
+  header .navbar.nav-toggle {
     display: block;
   }
 
-  header .navbar a {
+  header .navbar span {
     margin: 1rem;
     display: block;
     padding: 1.3rem 0;
@@ -484,7 +497,7 @@ header .navbar a:hover {
     text-align: center;
     border: 0.1rem solid #444;
     animation: nav-links 0.5s linear backwards;
-    animation-delay: calc(0.2s * var(--i));
+    animation-delay: calc(0.2s * var(i));
   }
 
   @keyframes nav-links {
@@ -519,27 +532,26 @@ header .navbar a:hover {
 
 /* example */
 
-.container {
-  color: #fff;
-  margin: 0 auto;
-  width: 100%;
+.price {
+  min-height: auto;
+}
 
-  text-align: center;
+.price .box-container {
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.grid-1-5 {
-  border: 2px solid #5d4e65;
-  height: 420px;
+
+.price .box-container .box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column;
+  height: 30rem;
+  width: 25rem;
   padding: 1rem;
   margin: 1rem;
-  position: relative;
-  text-align: center;
   transition: all 0.2s ease-in-out;
   background-color: rgb(33, 31, 35);
   background-repeat: no-repeat;
@@ -549,111 +561,40 @@ header .navbar a:hover {
     rgba(32, 30, 34, 1) 100%
   );
 }
-@media screen and (min-width: 700px) {
-  .grid-1-5 {
-    float: left;
-    width: 50%;
-  }
-  .grid-1-5:nth-child(odd) {
-    clear: left;
-  }
-}
-@media screen and (min-width: 800px) {
-  .grid-1-5 {
-    width: 33.3333333%;
-  }
-  .grid-1-5:nth-child(3n + 1) {
-    clear: left;
-  }
-  .grid-1-5:nth-child(odd) {
-    clear: none;
-  }
-}
-@media screen and (min-width: 1120px) {
-  .grid-1-5 {
-    width: 20%;
-  }
-  .grid-1-5:nth-child(odd),
-  .grid-1-5:nth-child(3n + 1) {
-    clear: none;
-  }
-}
-.grid-1-5:hover {
-  background-color: rgb(83, 69, 91);
-  background-image: linear-gradient(
-    top,
-    rgba(83, 69, 91, 1) 0%,
-    rgba(32, 29, 34, 1) 100%
-  );
-  border-top: 2px solid #ec7a37;
-  border-bottom: 2px solid #ff4f69;
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
-  transform: scale(1.025);
-  z-index: 2;
-}
-.grid-1-5:hover:before,
-.grid-1-5:hover:after {
-  content: "";
-  position: absolute;
-  background-color: rgb(246, 125, 53);
-  top: -2px;
-  bottom: -2px;
-  width: 2px;
-}
-.grid-1-5:hover:before {
-  left: -2px;
-}
-.grid-1-5:hover:after {
-  right: -2px;
-}
-.grid-1-5:hover .button {
-  background-color: rgb(238, 122, 54);
-  text-decoration: none;
-}
-h2 {
-  font-size: 3rem;
+
+.price .box-container .box h2 {
+  font-size: 2.5rem;
   font-weight: 400;
   margin: 0 0 0.5em;
   text-transform: uppercase;
+  color: #fff;
 }
-h3 {
+.price .box-container .box p {
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+.price .box-container .box h3 {
   font-size: 2.5rem;
   letter-spacing: 0.0625em;
-  margin: 0 0 0.3333333333333333em;
+  margin: 0 0 0.1rem;
   text-transform: uppercase;
-}
-p {
-  font-size: 1.5rem;
-  margin: 0 0 1.5em;
   color: #fff;
 }
-ul {
-  color: #796583;
-  font-size: 0.75em;
-  list-style-type: none;
-  padding: 0;
+
+.price .box-container .box h3 span {
+  color: var(--orange);
 }
-ul li {
-  margin: 0 0 0.8333333333333333em;
-  font-size: 1.5rem;
-  color: white;
+
+.price .box-container .box ul {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.button {
-  background-color: #9c83aa;
-  border-radius: 20px;
+
+.price .box-container .box ul li {
   color: #fff;
-  font-size: 1em;
-  font-weight: 700;
-  padding: 0.75em 1.5em;
-  position: absolute;
-  bottom: 1.25em;
-  left: 50%;
-  margin-left: -60px;
-  text-decoration: none;
-  width: 120px;
-  text-transform: uppercase;
-}
-sup,
-.small {
-  font-size: 0.6125em;
+  font-size: 1.2rem;
 }
