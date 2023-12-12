@@ -90,9 +90,9 @@ const Features = () => {
 
         <div className="box"  >
           <img src="images/fe3.png" alt="" />
-          <h3>money returns</h3>
+          <h3>24/7 service</h3>
           <p>
-          Guaranteed refunds: secure your purchases with our reliable money-back policy
+          Constant Support: Our Services are Accessible 24 Hours a Day, 7 Days a Week, Ensuring Assistance Whenever You Need.
           </p>
           <a href="#about" className="btn">
             read more
