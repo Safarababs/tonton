@@ -469,7 +469,7 @@ header .navbar span:hover {
     text-align: center;
     border: 0.1rem solid #444;
     animation: nav-links 0.5s linear backwards;
-    animation-delay: calc(0.2s * var(i));
+    animation-delay: calc(0.2s);
   }
 
   @keyframes nav-links {

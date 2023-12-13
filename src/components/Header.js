@@ -53,11 +53,11 @@ function Header() {
       </span>
 
       <nav className={`navbar ${isMenuOpen ? 'nav-toggle' : ''}`}>
-        <span onClick={() => scrollToSection('home')} style={{ animationDelay: '0.2s' }}>home</span>
-        <span onClick={() => scrollToSection('service')}style={{ animationDelay: '0.4s' }}>Service</span>
-        <span onClick={() => scrollToSection('price')}style={{ animationDelay: '0.6s' }}>Price</span>
-        <span onClick={() => scrollToSection('feature')}style={{ animationDelay: '0.8s' }}>Feature</span>
-        <span onClick={() => scrollToSection('contact')}style={{ animationDelay: '0.9s' }}>Contact</span>
+        <span onClick={() => scrollToSection('home')} style={{ animationDelay: '0s' }}>home</span>
+        <span onClick={() => scrollToSection('service')}style={{ animationDelay: '0.2s' }}>Service</span>
+        <span onClick={() => scrollToSection('price')}style={{ animationDelay: '0.4s' }}>Price</span>
+        <span onClick={() => scrollToSection('feature')}style={{ animationDelay: '0.6s' }}>Feature</span>
+        <span onClick={() => scrollToSection('contact')}style={{ animationDelay: '0.8s' }}>Contact</span>
       </nav>
     </header>
   );
