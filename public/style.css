@@ -204,6 +204,7 @@ header .navbar span:hover {
   animation: slideFromLeft 1s forwards 1s;
 }
 
+
 @keyframes slideFromLeft {
   to {
     opacity: 1;
@@ -531,6 +532,11 @@ header .navbar span:hover {
     var(--black) 0,
     rgba(32, 30, 34, 1) 100%
   );
+
+}
+
+.price .box-container .box:hover {
+  transform: scale(1.1);
 }
 
 .price .box-container .box h2 {
