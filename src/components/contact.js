@@ -31,6 +31,11 @@ const customStyles = {
 
 Modal.setAppElement("#root");
 
+const SERVICE_KEY = process.env.REACT_APP_SERVICE_KEY;
+const SERVICE_NAME = process.env.REACT_APP_SERVICE_NAME;
+const SERVICE_API = process.env.REACT_APP_SERVICE_API;
+
+
 const Contact = () => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
@@ -45,10 +50,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_emjf1t3",
-        "Tonton E.T Enterprise",
+        SERVICE_KEY,
+        SERVICE_NAME,
         form.current,
-        "eoy6A7j3RjMiULFpI"
+        SERVICE_API
       )
       .then(
         (result) => {

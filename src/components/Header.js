@@ -24,10 +24,11 @@ function Header() {
 
       <nav className={`navbar ${isMenuOpen ? 'nav-toggle' : ''}`}>
         <span onClick={() => scrollToSection('home')} style={{ animationDelay: '0s' }}>home</span>
+        <span onClick={() => scrollToSection('feature')}style={{ animationDelay: '0.1s' }}>Feature</span>
         <span onClick={() => scrollToSection('service')}style={{ animationDelay: '0.2s' }}>Service</span>
-        <span onClick={() => scrollToSection('price')}style={{ animationDelay: '0.4s' }}>Price</span>
-        <span onClick={() => scrollToSection('feature')}style={{ animationDelay: '0.6s' }}>Feature</span>
-        <span onClick={() => scrollToSection('contact')}style={{ animationDelay: '0.8s' }}>Contact</span>
+        <span onClick={() => scrollToSection('price')}style={{ animationDelay: '0.3s' }}>Price</span>
+        <span onClick={() => scrollToSection('about')}style={{ animationDelay: '0.4s' }}>About Us</span>
+        <span onClick={() => scrollToSection('contact')}style={{ animationDelay: '0.5s' }}>Contact</span>
       </nav>
     </header>
   );

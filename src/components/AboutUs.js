@@ -6,7 +6,7 @@ const AboutUs = () => {
       <h1 className="heading">about us</h1>
 
       <div className="content-container">
-        <div className="content-box" style={{height:"20rem"}}>
+        <div className="content-box small-box" >
         <h3>What we do</h3><hr className="new1"></hr>
           <p>
             At E. T. Enterprise, Our Journey Was Ignited By A Passion To Empower
@@ -16,7 +16,7 @@ const AboutUs = () => {
           </p>
         
         </div>
-        <div className="content-box" style={{height:"20rem"}}>
+        <div className="content-box small-box" >
           <h3>Join Us For Success</h3><hr className="new1"></hr>
           <p>
             Join Us In Unleashing Your Business's True Potential: Together,

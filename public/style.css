@@ -325,6 +325,10 @@ header .navbar span:hover {
   margin: 1rem;
 }
 
+.about .content-container .small-box {
+  height: 20rem;
+}
+
 .about .content-container .content-box h3 {
   font-size: 2.5rem;
   text-transform: capitalize;
@@ -421,7 +425,7 @@ header .navbar span:hover {
 
 .contact .row form {
   flex: 1 1 40rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .contact .row .map {
@@ -446,7 +450,6 @@ header .navbar span:hover {
 
 .contact .row form .inputBox textarea {
   height: 15rem;
-  resize: none;
 }
 
 .contact .row form .inputBox label {
@@ -491,7 +494,7 @@ header .navbar span:hover {
   background: var(--black);
   color: #fff;
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding:1rem;
   letter-spacing: 0.1rem;
 }
 
@@ -571,6 +574,12 @@ header .navbar span:hover {
     font-size: 50%;
   }
 
+  section {
+    padding: 0 7%;
+    padding-top: 3.5rem;
+    padding-bottom: .1rem;
+  }
+
   .heading {
     font-size: 3.5rem;
   }
@@ -587,5 +596,15 @@ header .navbar span:hover {
   .price .box-container .box {
     width: 80%;
   }
+
+  .about .content-container .content-box {
+    
+    height: auto;
+    
+  }
+
+.about .content-container .small-box {
+  height: auto;
+}
 }
 

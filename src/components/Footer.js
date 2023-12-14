@@ -10,17 +10,18 @@ const scrollToSection = (id) => {
 const Footer = () => {
   return (
     <div className="footer">
-    
-      
       <h1 className="credit">
         all &copy; copyright reserved by{" "}
         <span onClick={() => scrollToSection("home")}> e.t enterprise </span> @
         2023
       </h1>
       <div className="footer-text">
-    <p>Impressum: Elyes Taounza ET Enterprise Kellersohnweg 16, 45326 Essen </p>
-      <p>cell: +49 162 3939075</p><p>email: info@etenterprise.org</p>
-    </div>
+        <p>
+          Impressum: Elyes Taounza ET Enterprise Kellersohnweg 16, 45326 Essen{" "}
+        </p>
+        <p>cell: +49 162 3939075</p>
+        <p>email: info@etenterprise.org</p>
+      </div>
     </div>
   );
 };
