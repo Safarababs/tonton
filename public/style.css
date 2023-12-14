@@ -101,7 +101,7 @@ header .navbar span:hover {
 .home {
   display: flex;
   align-items: center;
-  background: url("./bg.png") no-repeat;
+  background: url("./images/bg.png") no-repeat;
   background-size: cover;
   background-position: center;
   flex-wrap: wrap;
@@ -283,6 +283,7 @@ header .navbar span:hover {
 
 .service .box-container .box:hover {
   background: #fff;
+  transform: scale(1.1);
 }
 
 .service .box-container .box:hover h3 {
@@ -290,7 +291,7 @@ header .navbar span:hover {
 }
 
 .service .box-container .box:hover p {
-  color: #666;
+  color: black;
 }
 
 /* about section */
@@ -341,6 +342,79 @@ header .navbar span:hover {
   width: 50%;
   margin: auto;
   border: 1px solid var(--yellow);
+}
+
+/* pricing section */
+.price {
+  min-height: auto;
+}
+
+.price .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.price .box-container .box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column;
+  height: 30rem;
+  width: 25rem;
+  padding: 1rem;
+  margin: 1rem;
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(33, 31, 35);
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+    circle at top,
+    var(--black) 0,
+    rgba(32, 30, 34, 1) 100%
+  );
+
+}
+
+.price .box-container .box:hover {
+  transform: scale(1.1);
+}
+
+.price .box-container .box h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 0 0.5em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.price .box-container .box p {
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+.price .box-container .box h3 {
+  font-size: 2.5rem;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.price .box-container .box h3 span {
+  color: var(--orange);
+}
+
+.price .box-container .box ul {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.price .box-container .box ul li {
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 /* contact */
@@ -413,7 +487,7 @@ header .navbar span:hover {
 }
 
 .footer .credit {
-  font-size: 2rem;
+  font-size: 1rem;
   background: var(--black);
   color: #fff;
   text-align: center;
@@ -500,78 +574,18 @@ header .navbar span:hover {
   .heading {
     font-size: 3.5rem;
   }
+
+  .service .box-container .box {
+    height: auto;
+    width: 90%;
+  }
+  
+  .feature .box-container .box {
+    width: 90%;
+  }
+
+  .price .box-container .box {
+    width: 80%;
+  }
 }
 
-/* example */
-
-.price {
-  min-height: auto;
-}
-
-.price .box-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.price .box-container .box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-flow: column;
-  height: 30rem;
-  width: 25rem;
-  padding: 1rem;
-  margin: 1rem;
-  transition: all 0.2s ease-in-out;
-  background-color: rgb(33, 31, 35);
-  background-repeat: no-repeat;
-  background-image: radial-gradient(
-    circle at top,
-    var(--black) 0,
-    rgba(32, 30, 34, 1) 100%
-  );
-
-}
-
-.price .box-container .box:hover {
-  transform: scale(1.1);
-}
-
-.price .box-container .box h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin: 0 0 0.5em;
-  text-transform: uppercase;
-  color: #fff;
-}
-.price .box-container .box p {
-  color: var(--orange);
-  font-size: 1.5rem;
-}
-
-.price .box-container .box h3 {
-  font-size: 2.5rem;
-  letter-spacing: 0.0625em;
-  margin: 0 0 0.1rem;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.price .box-container .box h3 span {
-  color: var(--orange);
-}
-
-.price .box-container .box ul {
-  display: flex;
-  align-items: left;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.price .box-container .box ul li {
-  color: #fff;
-  font-size: 1.2rem;
-}

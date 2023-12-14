@@ -16,6 +16,15 @@ const Services = () => {
         </div>
 
         <div className="box"  >
+          <img src="images/s1.png" alt="" />
+          <h3>Social Media Management</h3>
+          <p>
+          Engaging Audiences: Strategizing, curating content, and fostering connections across social media channels for impactful brand presence.
+          </p>
+          <a href="#about" className="btn">read more</a>
+        </div>
+
+        <div className="box"  >
           <img src="images/s2.png" alt="" />
           <h3>marketing</h3>
           <p>
@@ -60,14 +69,7 @@ const Services = () => {
           <a href="#about" className="btn">read more</a>
         </div>
 
-        <div className="box"  >
-          <img src="images/s1.png" alt="" />
-          <h3>Social Media Management</h3>
-          <p>
-          Engaging Audiences: Strategizing, curating content, and fostering connections across social media channels for impactful brand presence.
-          </p>
-          <a href="#about" className="btn">read more</a>
-        </div>
+        
 
         <div className="box"  >
           <img src="images/s2.png" alt="" />
