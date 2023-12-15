@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, {useState } from "react";
+import axios from 'axios';
 import Modal from "react-modal";
 
 // Define custom modal styles
@@ -31,42 +31,41 @@ const customStyles = {
 
 Modal.setAppElement("#root");
 
-const SERVICE_KEY = process.env.REACT_APP_SERVICE_KEY;
-const SERVICE_NAME = process.env.REACT_APP_SERVICE_NAME;
-const SERVICE_API = process.env.REACT_APP_SERVICE_API;
-
 
 const Contact = () => {
-  const form = useRef();
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    number: '',
+    message: '',
+  });
+
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const sendEmail = (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setMessage("");
     setModalIsOpen(true);
-
-    emailjs
-      .sendForm(
-        SERVICE_KEY,
-        SERVICE_NAME,
-        form.current,
-        SERVICE_API
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setLoading(false);
+    try {
+       await axios.post('https://tontonbackend.onrender.com/email', formData);
+      setLoading(false);
           setMessage("Email sent successfully!");
-        },
-        (error) => {
-          console.log(error.text);
-          setLoading(false);
+    } catch (error) {
+      setLoading(false);
           setMessage("Failed to send email. Please try again.");
-        }
-      );
+    }
   };
 
   const closeModal = () => {
@@ -78,20 +77,20 @@ const Contact = () => {
       <h1 className="heading">Contact Us</h1>
 
       <div className="row">
-        <form ref={form} onSubmit={sendEmail}>
+        <form  onSubmit={handleSubmit}>
           <div className="inputBox">
-            <input type="text" name="from_name" required />
+            <input type="text" value={formData.name} onChange={handleChange} name="name" required />
             <label>Name</label>
           </div>
           <div className="inputBox">
-            <input type="email" name="user_email" required />
+            <input type="email" value={formData.email} onChange={handleChange} name="email" required />
             <label>Email</label>
           </div>
           <div className="inputBox">
-            <input type="number" name="number" required /> <label>number</label>
+            <input type="number" name="number" value={formData.number} onChange={handleChange} required /> <label>number</label>
           </div>
           <div className="inputBox">
-            <textarea name="message" required cols="30" rows="10"></textarea>
+            <textarea name="message" value={formData.message} onChange={handleChange} required cols="30" rows="10"></textarea>
             <label>message</label>
           </div>
           <input type="submit" value="Send" className="btn" />
