@@ -24,9 +24,9 @@ const BusinessPricing = () => {
       <div className="box-container">
         <div className=" box">
           <h2>Basic plan</h2>
-          <h3>
+          {/* <h3>
             <sup>€</sup>2700<span className="small">/mo</span>
-          </h3>
+          </h3> */}
           <ul>
             <li>Branding</li>
             <li>SEO Optimization</li>
@@ -41,10 +41,10 @@ const BusinessPricing = () => {
 
         <div className=" box">
           <h2>Standard</h2>
-          <p>[most chosen one]</p>
-          <h3>
+          {/* <p>[most chosen one]</p> */}
+          {/* <h3>
             <sup>€</sup>3900<span className="small">/mo</span>
-          </h3>
+          </h3> */}
           <ul>
             <li>Branding</li>
             <li>SEO Optimization</li>
@@ -61,9 +61,9 @@ const BusinessPricing = () => {
 
         <div className=" box">
           <h2>Premium</h2>
-          <h3>
+          {/* <h3>
             <sup>€</sup>7700<span className="small">/mo</span>
-          </h3>
+          </h3> */}
 
           <ul>
             <li>Branding</li>

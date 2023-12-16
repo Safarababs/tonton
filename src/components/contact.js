@@ -38,6 +38,7 @@ const Contact = () => {
     name: '',
     email: '',
     number: '',
+    company: "",
     message: '',
   });
 
@@ -51,6 +52,8 @@ const Contact = () => {
       ...formData,
       [name]: value,
     });
+
+    
   };
 
   const handleSubmit = async (e) => {
@@ -58,8 +61,13 @@ const Contact = () => {
     setLoading(true);
     setMessage("");
     setModalIsOpen(true);
+    const updatedFormData = {
+      ...formData,
+      company: formData.company.trim() !== '' ? formData.company : 'Company name not provided',
+    };
+  
     try {
-       await axios.post('https://tontonbackend.onrender.com/email', formData);
+      await axios.post('https://tontonbackend.onrender.com/email', updatedFormData);
       setLoading(false);
           setMessage("Email sent successfully!");
     } catch (error) {
@@ -81,6 +89,10 @@ const Contact = () => {
           <div className="inputBox">
             <input type="text" value={formData.name} onChange={handleChange} name="name" required />
             <label>Name</label>
+          </div>
+          <div className="inputBox">
+            <input type="text" value={formData.company} onChange={handleChange} name="company" />
+            <label className="nonRequiredLabel">company Name</label>
           </div>
           <div className="inputBox">
             <input type="email" value={formData.email} onChange={handleChange} name="email" required />
