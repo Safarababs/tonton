@@ -3,21 +3,26 @@ import BusinessPricing from "./BusinessPricing";
 
 const Pricing = () => {
   function handleBuyNow(plan) {
-    const recipient = 'recipient@example.com';
+    const recipient = 'info@etenterprise.org';
     let subject = '';
-
+    let message = ''; 
+  
     if (plan === 'basic') {
       subject = 'I want to buy your basic plan';
+      message = 'Hello,\n\nI am interested in purchasing your basic plan. Please provide me with more details on the features and pricing.\n\nThank you.';
     } else if (plan === 'standard') {
       subject = 'I want to buy your standard most chosen plan';
+      message = 'Hi,\n\nI am keen on your most popular standard plan. Could you share additional information regarding this plan?\n\nRegards,';
     } else if (plan === 'standardPlus') {
       subject = 'I want to buy your standard plus plan';
+      message = 'Hi there,\n\nI am considering purchasing your standard plus plan. Can you give me insights into what it offers?\n\nThanks!';
     } else if (plan === 'premium') {
       subject = 'I want to buy your premium plan';
+      message = 'Dear Team,\n\nI am interested in acquiring your premium plan. Could you provide details on its exclusive features and pricing?\n\nBest regards,';
     }
-
-    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}`;
-
+  
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  
     window.location.href = mailtoLink;
   }
 
