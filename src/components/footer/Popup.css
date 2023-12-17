@@ -1,0 +1,9 @@
+.popup{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem;
+}

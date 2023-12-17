@@ -27,3 +27,16 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// import React from 'react'
+// import Dsvgo from './Dsvgo'
+
+// const Footer = () => {
+//   return (
+//     <div>
+//       <Dsvgo />
+//     </div>
+//   )
+// }
+
+// export default Footer

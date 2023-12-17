@@ -92,7 +92,7 @@ const Contact = () => {
           </div>
           <div className="inputBox">
             <input type="text" value={formData.company} onChange={handleChange} name="company" />
-            <label className="nonRequiredLabel">company Name</label>
+            <label className="nonRequiredLabel">company Name (optional)</label>
           </div>
           <div className="inputBox">
             <input type="email" value={formData.email} onChange={handleChange} name="email" required />

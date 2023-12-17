@@ -225,7 +225,7 @@ header .navbar span:hover {
 
 .feature .box-container .box h3 {
   font-size: 2.5rem;
-  color: var(--black);
+  color: black;
   padding: 1rem 0;
 }
 
@@ -237,12 +237,12 @@ header .navbar span:hover {
 }
 
 .feature .box-container .box .btn {
-color: #fff;
+color: black;
 background: var(--black);
 }
 
 .feature .box-container .box .btn:hover {
-  color: black;
+  color: var(--black);
   background: white;
 }
 
@@ -561,6 +561,17 @@ background: var(--black);
 
 .footer .credit span {
   color: var(--orange);
+}
+
+.custom-modal {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.custom-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* media queries  */
