@@ -40,6 +40,7 @@ section {
   cursor: pointer;
   background: none;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .customBtn:hover {

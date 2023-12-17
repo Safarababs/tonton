@@ -45,7 +45,7 @@ function Popup() {
                   Deny
                 </button>
                 <button type="button" className="btn btn-primary btn-lg" onClick={closeModal} style={{background:"green"}}>
-                  accept
+                  Accept
                 </button>
               </div>
             </div>
