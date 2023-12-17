@@ -30,7 +30,7 @@ const Features = () => {
   minutes into an impactful opportunity for your business's success.
 </p>
 
-      <h1 className="heading">our awesome features</h1>
+      <h1 className="title">our awesome features</h1>
 
       <div className="box-container">
         <div className="box"  >
@@ -39,7 +39,7 @@ const Features = () => {
           <p>
           Set sights on expansive horizons, crafting strategies to propel beyond the immediate, nurturing a future-oriented approach for sustained growth.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -50,7 +50,7 @@ const Features = () => {
           <p>
           Market research: dive into customer needs, industry trends, and insights to refine strategies, innovate, and drive impactful decisions.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -61,7 +61,7 @@ const Features = () => {
           <p>
           Digital marketing: leverage online channels, optimize campaigns, and engage audiences to enhance brand visibility and drive impactful results.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -72,7 +72,7 @@ const Features = () => {
           <p>
           Swift delivery: expedite your orders, ensuring prompt and efficient service to meet your deadlines.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -83,7 +83,7 @@ const Features = () => {
           <p>
           Substantial discounts: benefit from significant price reductions, enhancing your savings and value for money.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -94,7 +94,7 @@ const Features = () => {
           <p>
           Constant Support: Our Services are Accessible 24 Hours a Day, 7 Days a Week, Ensuring Assistance Whenever You Need.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>

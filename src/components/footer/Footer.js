@@ -1,4 +1,6 @@
 import React from "react";
+import FooterPopup from "./FooterPopup";
+import AddressPopup from "./FooterAddress";
 
 const scrollToSection = (id) => {
   const element = document.getElementById(id);
@@ -8,6 +10,7 @@ const scrollToSection = (id) => {
 };
 
 const Footer = () => {
+  
   return (
     <div className="footer">
       <h1 className="credit">
@@ -16,27 +19,12 @@ const Footer = () => {
         2023
       </h1>
       <div className="footer-text">
-        <p>
-          Impressum: Elyes Taounza ET Enterprise Kellersohnweg 16, 45326 Essen{" "}
-        </p>
-        <p>cell: +49 162 3939075</p>
-        <p>email: info@etenterprise.org</p>
+      <AddressPopup />
+        <FooterPopup />
+        
       </div>
     </div>
   );
 };
 
 export default Footer;
-
-// import React from 'react'
-// import Dsvgo from './Dsvgo'
-
-// const Footer = () => {
-//   return (
-//     <div>
-//       <Dsvgo />
-//     </div>
-//   )
-// }
-
-// export default Footer

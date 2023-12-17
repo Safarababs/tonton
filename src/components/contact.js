@@ -82,7 +82,7 @@ const Contact = () => {
 
   return (
     <section className="contact" id="contact">
-      <h1 className="heading">Contact Us</h1>
+      <h1 className="title">Contact Us</h1>
 
       <div className="row">
         <form  onSubmit={handleSubmit}>
@@ -105,7 +105,7 @@ const Contact = () => {
             <textarea name="message" value={formData.message} onChange={handleChange} required cols="30" rows="10"></textarea>
             <label>message</label>
           </div>
-          <input type="submit" value="Send" className="btn" />
+          <input type="submit" value="Send" className="customBtn" />
         </form>
         <Modal
           isOpen={modalIsOpen}
@@ -114,7 +114,7 @@ const Contact = () => {
         >
           <div>
             {loading ? <p>Please wait...</p> : <p>{message}</p>}
-            <button onClick={closeModal} className="btn">
+            <button onClick={closeModal} className="customBtn">
               OK
             </button>
           </div>

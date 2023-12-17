@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Terms from "./Terms";
 
-function Popup() {
-  const [showModal, setShowModal] = useState(true);
+function FooterPopup() {
+  const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
-    setShowModal(false);
+    setShowModal(true);
   };
 
   const closeModal = () => {
@@ -16,8 +16,8 @@ function Popup() {
 
   return (
     <div>
-      <button type="button" className="btn btn-primary" onClick={openModal} style={{display:"none"}}>
-        Launch modal
+      <button type="button" className="btn btn-primary" onClick={openModal}>
+      Datenschutzerklärung
       </button>
 
       {showModal && (
@@ -63,4 +63,4 @@ function Popup() {
   );
 }
 
-export default Popup;
+export default FooterPopup;

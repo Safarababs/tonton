@@ -26,7 +26,7 @@ const BusinessPricing = () => {
 
   return (
     <div className="price">
-      <h1 className="heading">our business packages</h1>
+      <h1 className="title">our business packages</h1>
       <div className="box-container">
         <div className=" box">
           <h2>Basic plan</h2>
@@ -40,7 +40,7 @@ const BusinessPricing = () => {
             <li>web development</li>
             <li>web design</li>
           </ul>
-          <button onClick={() => handleBuyNow('basic')} className="btn">
+          <button onClick={() => handleBuyNow('basic')} className="customBtn">
             buy now
           </button>
         </div>
@@ -60,7 +60,7 @@ const BusinessPricing = () => {
             <li>Social Media Management</li>
             <li>Logo Design</li>
           </ul>
-          <button onClick={() => handleBuyNow('standard')} className="btn">
+          <button onClick={() => handleBuyNow('standard')} className="customBtn">
             buy now
           </button>
         </div>
@@ -80,7 +80,7 @@ const BusinessPricing = () => {
             <li>Social Media Management</li>
             <li>Logo Design</li>
           </ul>
-          <button onClick={() => handleBuyNow('premium')} className="btn">
+          <button onClick={() => handleBuyNow('premium')} className="customBtn">
             buy now
           </button>
         </div>

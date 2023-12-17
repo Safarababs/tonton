@@ -7,7 +7,7 @@ const Home = () => {
         <img src="images/home-img.png" alt="" />
       </div>
 
-      <div className="content">
+      <div className="homeContent">
         <h3>Unlock Your Business Potential with E.T.Enterprise.</h3>
         <p>
           With Our Comprehensive Suite Of Services Encompassing Marketing,
@@ -17,7 +17,7 @@ const Home = () => {
           Your Full Business's Potential For Exponential Growth And Dominance In
           The Digital Revolution.
         </p>
-        <a href="#about" className="btn">
+        <a href="#about" className="customBtn">
           discover more
         </a>
       </div>

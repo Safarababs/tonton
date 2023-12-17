@@ -29,7 +29,7 @@ const Pricing = () => {
   return (
     <>
       <section className="price" id="price">
-        <h1 className="heading">our digital packages</h1>
+        <h1 className="title">our digital packages</h1>
         <div className="box-container">
           <div className="box">
             <h2>Basic plan</h2>
@@ -42,7 +42,7 @@ const Pricing = () => {
               <li>ads</li>
               <li>marketing</li>
             </ul>
-            <button onClick={() => handleBuyNow('basic')} className="btn">
+            <button onClick={() => handleBuyNow('basic')} className="customBtn">
               buy now
             </button>
           </div>
@@ -61,7 +61,7 @@ const Pricing = () => {
               <li>web design</li>
               <li>branding</li>
             </ul>
-            <button onClick={() => handleBuyNow('standard')} className="btn">
+            <button onClick={() => handleBuyNow('standard')} className="customBtn">
               buy now
             </button>
           </div>
@@ -80,7 +80,7 @@ const Pricing = () => {
               <li>marketing</li>
               <li>branding</li>
             </ul>
-            <button onClick={() => handleBuyNow('standardPlus')} className="btn">
+            <button onClick={() => handleBuyNow('standardPlus')} className="customBtn">
               buy now
             </button>
           </div>
@@ -99,7 +99,7 @@ const Pricing = () => {
               <li>marketing</li>
               <li>branding</li>
             </ul>
-            <button onClick={() => handleBuyNow('premium')} className="btn">
+            <button onClick={() => handleBuyNow('premium')} className="customBtn">
               buy now
             </button>
           </div>

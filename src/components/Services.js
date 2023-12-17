@@ -3,7 +3,7 @@ import React from "react";
 const Services = () => {
   return (
     <section className="service" id="service">
-      <h1 className="heading">our services</h1>
+      <h1 className="title">our services</h1>
 
       <div className="box-container">
         <div className="box">
@@ -13,7 +13,7 @@ const Services = () => {
             Creating Digital Solutions: Crafted web and app development ensuring
             efficiency and innovation, propelling your business forward.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -26,7 +26,7 @@ const Services = () => {
             connections across social media channels for impactful brand
             presence.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -38,7 +38,7 @@ const Services = () => {
             Strategic Reach: Amplifying your brand's impact through
             comprehensive marketing strategies that resonate and engage.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -50,7 +50,7 @@ const Services = () => {
             Visual Identity: Crafting unique and impactful brand identities that
             resonate and leave a lasting impression.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -62,7 +62,7 @@ const Services = () => {
             Enhancing Visibility: Elevating online presence through strategic
             SEO tactics, driving organic traffic and maximizing reach.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -74,7 +74,7 @@ const Services = () => {
             Crafting Campaigns: Tailored management strategies to optimize ad
             performance, ensuring maximum impact and ROI.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -86,7 +86,7 @@ const Services = () => {
             Innovative Creations: Crafting captivating and functional designs
             for seamless user experiences on web and app platforms.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -98,7 +98,7 @@ const Services = () => {
             Crafting Identity: Tailored logos reflecting your brand essence and
             values for memorable visual representation.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -110,7 +110,7 @@ const Services = () => {
             Innovative strategies and concepts sculpted to elevate your business
             prospects and reshape the industry landscape.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -123,7 +123,7 @@ const Services = () => {
             pave the path for strategic business growth and enhanced market
             positioning.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -135,7 +135,7 @@ const Services = () => {
             Pursuing enduring goals, crafting strategies, and fostering plans
             that stretch beyond the immediate horizon for sustained success.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -148,7 +148,7 @@ const Services = () => {
             advertising to engage audiences and prompt desired actions or
             responses.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
@@ -161,7 +161,7 @@ const Services = () => {
             coherent visual piece through trimming, transitions, effects, and
             audio adjustments.
           </p>
-          <a href="#about" className="btn">
+          <a href="#about" className="customBtn">
             read more
           </a>
         </div>
