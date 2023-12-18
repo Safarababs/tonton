@@ -42,10 +42,10 @@ function FooterPopup() {
                   onClick={closeModal}
                   style={{background:"red"}}
                 >
-                  Deny
+                  Akzeptieren
                 </button>
                 <button type="button" className="btn btn-primary btn-lg" onClick={closeModal} style={{background:"green"}}>
-                  Accept
+                Ablehnen
                 </button>
               </div>
             </div>

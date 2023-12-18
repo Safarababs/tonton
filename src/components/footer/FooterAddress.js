@@ -34,7 +34,7 @@ const AddressPopup = () => {
                 <div className="address-group">
                   <h3>Name:</h3>
                   <p>Elyes Taounza</p>
-                  <p>Einzalunternehmen</p>
+                  <p>Einzelunternehmen</p>
                   <p>info@etenterprise.org</p>
                   <p>Tel: 01623939075</p>
                 </div>
