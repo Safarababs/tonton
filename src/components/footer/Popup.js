@@ -40,11 +40,11 @@ function Popup() {
                   type="button"
                   className="btn btn-primary btn-lg"
                   onClick={closeModal}
-                  style={{background:"red"}}
+                  style={{background:"green"}}
                 >
                   Akzeptieren
                 </button>
-                <button type="button" className="btn btn-primary btn-lg" onClick={closeModal} style={{background:"green"}}>
+                <button type="button" className="btn btn-primary btn-lg" onClick={closeModal} style={{background:"red"}}>
                 Ablehnen
                 </button>
               </div>
