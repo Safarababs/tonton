@@ -87,6 +87,14 @@ header .navbar span {
   cursor: pointer;
 }
 
+header .navbar span.active{
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: .3rem;
+  background: var(--black);
+}
+
 header .navbar span:hover {
   color: #fff;
   border: 1px solid black;

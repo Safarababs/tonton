@@ -16,7 +16,7 @@ const Footer = () => {
       <h1 className="credit">
         all &copy; copyright reserved by{" "}
         <span onClick={() => scrollToSection("home")}> e.t enterprise </span> @
-        2023
+        2023 - {new Date().getFullYear()}
       </h1>
       <div className="footer-text">
       <AddressPopup />
