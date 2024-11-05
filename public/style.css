@@ -87,11 +87,11 @@ header .navbar span {
   cursor: pointer;
 }
 
-header .navbar span.active{
+header .navbar span.active {
   color: #fff;
   border: 1px solid black;
   border-radius: 10px;
-  padding: .3rem;
+  padding: 0.3rem;
   background: var(--black);
 }
 
@@ -99,7 +99,7 @@ header .navbar span:hover {
   color: #fff;
   border: 1px solid black;
   border-radius: 10px;
-  padding: .3rem;
+  padding: 0.3rem;
   background: var(--black);
 }
 
@@ -229,7 +229,6 @@ header .navbar span:hover {
   animation: slideFromLeft 1s forwards 1s;
 }
 
-
 @keyframes slideFromLeft {
   to {
     opacity: 1;
@@ -244,7 +243,6 @@ header .navbar span:hover {
   font-weight: bolder;
 }
 
-
 .feature .box-container .box p {
   font-size: 1.3rem;
   color: black;
@@ -252,8 +250,8 @@ header .navbar span:hover {
 }
 
 .feature .box-container .box .customBtn {
-color: black;
-background: var(--black);
+  color: black;
+  background: var(--black);
 }
 
 .feature .box-container .box .customBtn:hover {
@@ -328,7 +326,7 @@ background: var(--black);
 }
 
 .service .box-container .box .customBtn {
-  color: black
+  color: black;
 }
 
 .service .box-container .box .customBtn:hover {
@@ -418,7 +416,6 @@ background: var(--black);
     var(--black) 0,
     rgba(32, 30, 34, 1) 100%
   );
-
 }
 
 .price .box-container .box:hover {
@@ -460,8 +457,8 @@ background: var(--black);
 .price .box-container .box ul li {
   color: #fff;
   font-size: 1.2rem;
-  padding: .2rem;
-  margin: .2rem;
+  padding: 0.2rem;
+  margin: 0.2rem;
 }
 
 .price .box-container .box .customBtn {
@@ -471,7 +468,7 @@ background: var(--black);
   border-color: var(--black);
 }
 
-.price .box-container .box .customBtn:hover{
+.price .box-container .box .customBtn:hover {
   background: var(--black);
   color: #fff;
   border-color: black;
@@ -487,8 +484,6 @@ background: var(--black);
 .contact .row form .inputBox {
   position: relative;
 }
-
-
 
 .contact .row form .inputBox input,
 .contact .row form .inputBox textarea {
@@ -538,9 +533,7 @@ background: var(--black);
   color: var(--black);
 }
 
-.contact .row form .inputBox input:not([required]):focus ~ label
-
- {
+.contact .row form .inputBox input:not([required]):focus ~ label {
   top: -0.7rem;
   left: 0;
   color: var(--black);
@@ -570,7 +563,7 @@ background: var(--black);
   background: var(--black);
   color: #fff;
   text-align: center;
-  padding:1rem;
+  padding: 1rem;
   letter-spacing: 0.1rem;
 }
 
@@ -622,8 +615,8 @@ background: var(--black);
 
   header .navbar {
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 100;
+    left: 120%;
     width: 100%;
     background: #eee;
     height: calc(100vh - 100%);
@@ -674,7 +667,7 @@ background: var(--black);
   section {
     padding: 0 7%;
     padding-top: 3.5rem;
-    padding-bottom: .1rem;
+    padding-bottom: 0.1rem;
   }
 
   .title {
@@ -685,7 +678,7 @@ background: var(--black);
     height: auto;
     width: 90%;
   }
-  
+
   .feature .box-container .box {
     width: 90%;
   }
@@ -695,13 +688,10 @@ background: var(--black);
   }
 
   .about .content-container .content-box {
-    
     height: auto;
-    
   }
 
-.about .content-container .small-box {
-  height: auto;
+  .about .content-container .small-box {
+    height: auto;
+  }
 }
-}
-
